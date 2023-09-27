@@ -1,0 +1,181 @@
+/* Estilos gerais para o site */
+
+/* Estilo para o corpo (body) */
+body {
+    font-family: 'Rajdhani', sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo para o cabeçalho (header) */
+header {
+    background-color: #161330;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    font-size: 36px;
+}
+
+header a {
+    color: #FFA500;
+    text-decoration: none;
+}
+
+/* Estilo para links */
+a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo para os principais elementos de conteúdo */
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para os títulos (h2, h3, etc.) */
+h2 {
+    font-size: 34px;
+    color: #333;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    margin-left: 20px;
+    font-weight: 500;
+}
+
+h3 {
+    font-size: 30px;
+    color: #333;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+/* Estilo para formulários */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="email"],
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #0f0930;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+/* Estilo para listas não ordenadas (ul) */
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+/* Estilo para imagens */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Adicione estilos específicos para suas páginas conforme necessário */
+
+/* Exemplo de estilo para a página de compra */
+.purchase-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.purchase-form button {
+    margin-top: 15px;
+}
+
+/* Estilo para a seção de serviços */
+.services {
+    background-color: #fff;
+    padding: 40px 0;
+}
+
+.services-title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.service {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.service h3 {
+    font-size: 24px;
+    color: #333;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.service p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* Estilo para as avaliações de clientes */
+.customer-reviews {
+    margin-top: 20px;
+}
+
+.review {
+    margin-bottom: 10px;
+    border-left: 4px solid #FFA500;
+    padding-left: 10px;
+}
+
+.review-rating {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.review-text {
+    font-size: 14px;
+    color: #333;
+}
+
+/* Estilo para o botão "Comprar" no modal */
+.buy-button {
+    background-color: #FFA500;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.buy-button:hover {
+    background-color: #FF8C00;
+}

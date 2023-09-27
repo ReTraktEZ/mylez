@@ -1,0 +1,36 @@
+.site-footer {
+    background-color: #161330;
+    color: white;
+    padding: 30px 0;
+    text-align: center;
+    border-top: 1px solid #333; /* Adicione uma borda superior */
+    border-bottom: 1px solid #333; /* Adicione uma borda inferior */
+  
+  }
+  
+  .footer-links ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .footer-links li {
+    margin-right: 20px;
+  }
+  
+  .page-link {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  .page-link:hover {
+    color: #FFA500;
+  }
+  
+  .page-link.current {
+    color: #FFA500;
+    font-weight: 600;
+  }

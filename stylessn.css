@@ -1,0 +1,228 @@
+body, h1, h2, h3, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Rajdhani', sans-serif;
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.fade-in.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Estilos da seção "Sobre Nós" */
+.about {
+max-width: 1200px;
+margin: 150px auto;
+text-align: center;
+}
+
+.about h2 {
+font-size: 35px;
+margin-top: 10px;
+margin-bottom: 20px;
+color: #11122e;
+font-weight: 500;
+font-family: 'Rajdhani', sans-serif;
+border-bottom: 2px solid #11122e;
+padding-bottom: 10px;
+}
+
+.members {
+display: flex;
+justify-content: center;
+align-items: center;
+flex-wrap: wrap;
+}
+
+.member {
+position: relative;
+margin: 20px;
+cursor: pointer;
+}
+
+.member-circle {
+width: 250px;
+height: 250px;
+overflow: hidden;
+border-radius: 50%;
+transition: transform 0.3s;
+}
+
+.member img {
+max-width: 100%;
+height: auto;
+display: block;
+}
+
+.member:hover .member-circle {
+transform: scale(1.1);
+}
+
+.member-info {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-color: rgba(0, 0, 0, 0.8);
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+opacity: 0;
+border-radius: 100%;
+transform: translateY(100%);
+transition: opacity 0.3s, transform 0.3s;
+}
+
+.member.clicked .member-info {
+opacity: 1;
+transform: translateY(0);
+}
+
+.member-info h3 {
+font-size: 24px;
+color: white;
+margin-bottom: 10px;
+}
+
+.member-info p {
+font-size: 18px;
+color: #FFA500;
+}
+
+.member-info-contact {
+margin-top: 10px;
+}
+
+.member-info-contact p {
+font-size: 16px;
+color: #11122e;
+}
+
+/* Fale Conosco section styles */
+.contact-us {
+max-width: 1200px;
+margin: 100px auto;
+text-align: center;
+}
+
+.contact-us h2 {
+font-size: 35px;
+margin-top: 10px;
+margin-bottom: 20px;
+color: #11122e;
+font-weight: 500;
+font-family: 'Rajdhani', sans-serif;
+border-bottom: 2px solid #11122e;
+padding-bottom: 10px;
+}
+
+.contact-form {
+max-width: 600px;
+margin: 0 auto;
+}
+
+#contact-form label {
+display: block;
+font-size: 18px;
+margin-top: 20px;
+}
+
+#contact-form input,
+#contact-form textarea {
+width: 100%;
+padding: 10px;
+border: 1px solid #ccc;
+border-radius: 5px;
+margin-top: 5px;
+}
+
+#contact-form textarea {
+resize: vertical;
+}
+
+#contact-form button {
+background-color: #FFA500;
+color: white;
+border: none;
+padding: 10px 20px;
+cursor: pointer;
+transition: background-color 0.3s;
+margin-top: 20px;
+}
+
+#contact-form button:hover {
+background-color: #FF8C00;
+}
+
+.about {
+  max-width: 1200px;
+  margin: 50px auto;
+  text-align: center;
+  
+}
+
+.about p {
+  font-size: 20px;
+  line-height: 1.5;
+  font-weight: 500; /* Usando a variação @500 */
+  
+}
+
+/* Footer styles */
+
+footer {
+  background-color: #161330; /* Azul mais escuro */
+  color: white;
+  padding: 30px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact,
+.newsletter {
+  flex: 1;
+  padding: 0 20px;
+}
+
+.contact h3,
+.newsletter h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.contact p,
+.newsletter p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.newsletter input {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  margin-bottom: 10px;
+}
+
+.newsletter button {
+  background-color: #FFA500;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.newsletter button:hover {
+  background-color: #FF8C00;
+}

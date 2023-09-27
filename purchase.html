@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="stylespurchase.css">
+    <link rel="stylesheet" href="footerlinks.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500&display=swap" rel="stylesheet">
+    <title>Compra do Produto</title>
+</head>
+<body>
+    <header>
+        <h1>Compra do Produto</h1>
+        <a href="produtos-servicos2.html">Voltar à Produtos e Serviços</a>
+    </header>
+
+    <main>
+        <section class="product-details">
+            <h2>Detalhes do Produto</h2>
+            <div class="product-image">
+                <img src="product1.jpg" alt="Imagem do Produto">
+            </div>
+            <div class="product-info">
+                <h3>Snakeel</h3>
+                <p class="product-description">Protótipo de tomada com extensão embutida.</p>
+                <p class="product-details">Detalhes do Produto... Aqui, estará uma descrição mais detalhada do produto. Súper Útil.</p>
+                <p class="product-price">Preço: R$ 99,99</p>
+            </div>
+        </section>
+
+        <section class="purchase-form">
+            <h2>Detalhes da Compra</h2>
+            <form action="checkout.html" method="POST">
+                <label for="quantity">Quantidade:</label>
+                <input type="number" id="quantity" name="quantity" min="1" value="1" required>
+
+                <label for="shipping-address">Endereço de Entrega:</label>
+                <textarea id="shipping-address" name="shipping-address" required></textarea>
+
+                <label for="payment-method">Método de Pagamento:</label>
+                <select id="payment-method" name="payment-method" required>
+                    <option value="credit-card">Cartão de Crédito</option>
+                    <option value="paypal">PayPal</option>
+                    <option value="bank-transfer">Transferência Bancária</option>
+                </select>
+
+                <button type="submit" class="buy-button">Finalizar Compra</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2023 Sua Empresa. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

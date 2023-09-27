@@ -1,0 +1,294 @@
+body, h1, h2, h3, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+  
+  body {
+    font-family: 'Rajdhani', sans-serif;
+  }
+  
+  /* Hero section styles */
+  .hero {
+    position: relative;
+    height: 88.5vh; /* Ajuste o valor de altura conforme necessário */
+    animation: showCarouselBackground 2.5s ease 0s; /* Adicione a animação com atraso */
+  }
+  
+  .carousel {
+    display: block;
+    overflow: hidden;
+    position: absolute; /* Altere para absolute para ocupar o espaço do elemento pai */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    height: 100%; /* Ajuste o valor de altura conforme necessário */
+  }
+  
+  .carousel-images {
+    display: flex;
+    transition: transform 1s ease-in-out;
+    width: 312%;
+    object-fit: cover;
+  }
+  
+  .carousel-image {
+    flex: 10%;
+    height: 10%;
+    object-fit: cover;
+    width: 1%;
+  }
+    
+  
+  .hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .hero-content h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+  
+  .hero-content p {
+    font-size: 18px;
+  }
+  
+  /* Sobre a empresa - prévia */
+  .about {
+    max-width: 800px;
+    margin: 50px auto;
+    text-align: center;
+    
+  }
+  
+  .about p {
+    font-size: 20px;
+    line-height: 1.5;
+    font-weight: 500; /* Usando a variação @500 */
+    
+  }
+
+  /* No seu arquivo de estilos CSS */
+.cta {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 15px 30px;
+  background-color: #FFA500;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+  background-color: #FF8C00;
+}
+
+/* Estilo para a seção "highlight" com layout à esquerda */
+.highlight {
+  background-color: #f8f8f8;
+  padding: 80px 0;
+  text-align: center;
+}
+
+.highlight-content {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.highlight-title {
+  font-size: 40px;
+  color: #11122e;
+  margin-bottom: 20px;
+  position: relative;
+  display: inline-flex;
+}
+
+.highlight-subtitle {
+  font-size: 25px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.product-highlights {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.product-highlight {
+  flex: 1;
+  border: 2px solid #FFA500;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-img {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  border-radius: 20px;
+  margin: 0 auto 20px;
+  display: block;
+}
+
+.product-highlight h3 {
+  font-size: 24px;
+  color: #11122e;
+  margin-bottom: 10px;
+}
+
+.product-highlight p {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.cta-buttonn {
+  display: inline-block;
+  padding: 8px 18px;
+  background-color: #FFA500;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #ff9100;
+}
+
+.highlight::after {
+  content: "";
+  display: block;
+  width: 50%;
+  height: 2px;
+  position: relative;
+  background-color: #ccc; /* Cor da linha */
+  margin-top: 100px;
+  margin-bottom: -80px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+/* Estilo para a seção "Sobre Nós" com imagem */
+.about-us-cta {
+  background-color: #f5f5f5; /* Cor de fundo cinza claro */
+  padding: 80px 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Divide a seção em duas colunas */
+  align-items: flex-start;
+}
+
+.about-us-content {
+  max-width: 600px;
+  padding: 0 50px;
+}
+
+.about-us-title {
+  font-size: 40px;
+  color: #11122e;
+  margin-bottom: 20px;
+  position: relative;
+  display: inline-block;
+}
+
+.underline-d {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%; /* Ajuste o valor conforme necessário */
+  height: 3px;
+  background-color: #FF8C00;
+}
+
+.underline-c {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 50%; /* Ajuste o valor conforme necessário */
+  height: 3px;
+  background-color: #FF8C00;
+}
+
+.about-us-description {
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 120px;
+}
+
+.about-us-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-us-image img {
+  width: 50%;
+  height: auto;
+  border-radius: 10px;
+}
+
+
+  
+  /* Footer styles */
+  footer {
+    background-color: #161330; /* Azul mais escuro */
+    color: white;
+    padding: 30px 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .contact,
+  .newsletter {
+    flex: 1;
+    padding: 0 20px;
+  }
+  
+  .contact h3,
+  .newsletter h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .contact p,
+  .newsletter p {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .newsletter input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    margin-bottom: 10px;
+  }
+  
+  .newsletter button {
+    background-color: #FFA500;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .newsletter button:hover {
+    background-color: #FF8C00;
+  }
