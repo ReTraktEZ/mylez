@@ -1,0 +1,13 @@
+.product-customization {
+    margin-top: 20px;
+}
+
+.product-customization h2 {
+    font-size: 24px;
+}
+
+.color-options,
+.size-options,
+.model-options {
+    margin-top: 10px;
+}
