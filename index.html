@@ -5,31 +5,53 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="header.css"> <!-- Arquivo CSS do cabeçalho -->
+  <link rel="stylesheet" href="footer.css">
   <link rel="stylesheet" href="footerlinks.css">
   <link rel="stylesheet" href="stylesind.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500&display=swap" rel="stylesheet">
-  <title>Mylez - Início</title>
+  <title>Mylez</title>
 </head>
 <body>
+ 
   <header class="header">
-    <div class="header-border"></div> <!-- Elemento para a borda laranja -->
+    <div class="header-border"></div>
     <nav class="nav">
-      <div class="logo">
-        <a href="index.html">
-        <h1>Mylez</h1>
-        </a>
-      </div>
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="missao-visao-valores2.html">Missão, Visão e Valores</a></li>
-        <li><a href="produtos-servicos2.html">Produtos e Serviços</a></li>
-        <li><a href="sobre-nos2.html">Sobre Nós</a></li>
-      </ul>
+        <div class="logo">
+            <a href="index.html">
+                <img src="img/logo.png" alt="Logo da Mylez">
+            </a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="produtos-servicos2.html">Produtos e Serviços</a></li>
+            <li><a href="sobre-nos2.html">Sobre Nós</a></li>
+        </ul>
+        <div class="header-actions">
+            <div class="search header-action">
+                <form action="busca.html" method="get">
+                    <input type="text" name="q" placeholder="Buscar">
+                    <button type="submit">
+                        <img src="img/lupa.png" alt="Ícone de Busca">
+                    </button>
+                </form>
+            </div>
+            <div class="cart header-action">
+                <a href="carrinho.html">
+                    <img src="img/carrinho.png" alt="Ícone do Carrinho">
+                </a>
+            </div>
+            <div class="links header-action">
+                <a href="login.html">Login</a>
+            </div>
+            <div class="links header-action">
+                <a href="registro.html">Registrar</a>
+            </div>
+        </div>
     </nav>
-  </div>
-  </header>
+</header>
+
 
   <section class="hero">
     <div class="carousel">
@@ -40,48 +62,131 @@
       </div>
     </div>
     <div class="hero-content">
-      <h2 style="color: white;">Bem-vindo(a) ao ReTraktEZ</h2>
+      <h2 style="color: white;">Bem-vindo(a) à Mylez</h2>
       <p style="color: white;">Sua vida mais fácil</p>
     </div>
   </section>
 
   <section class="about">
-    <p>Quantas vezes nos vemos lutando contra cabos e adaptadores, tentando encontrar a tomada perfeita para nossos dispositivos? A falta de praticidade em nossos lares e escritórios é uma realidade incômoda. Foi dessa frustração cotidiana que surgiu a ReTraktEZ. Nós acreditamos que a conveniência deve ser a norma, não um luxo. Nossa missão é transformar a forma como interagimos com a energia, trazendo soluções inovadoras para simplificar o uso de dispositivos elétricos. Imagine um mundo onde a tomada vem até você, onde a praticidade é a regra. Bem-vindo à era da facilidade, bem-vindo à ReTraktEZ.</p>
+    <p>Quantas vezes nos vemos lutando contra cabos e adaptadores, tentando encontrar a tomada perfeita para nossos dispositivos? A falta de praticidade em nossos lares e escritórios é uma realidade incômoda. Foi dessa frustração cotidiana que surgiu a MYLEZ. Nós acreditamos que a conveniência deve ser a norma, não um luxo. Nossa missão é transformar a forma como interagimos com a energia, trazendo soluções inovadoras para simplificar o uso de dispositivos elétricos. Imagine um mundo onde a tomada vem até você, onde a praticidade é a regra. Bem-vindo à era da facilidade, bem-vindo à MYLEZ.</p>
     <div class="cta">
-      <a href="missao-visao-valores2.html" class="cta-button">Saiba mais</a>
+      <a href="sobre-nos2.html" class="cta-button">Saiba mais</a>
     </div>
   </section>
 
-<!-- Seção "highlight" -->
-<section class="highlight">
-  <div class="highlight-content">
-    <h2 class="highlight-title">Destaques<span class="underline-d"></span></h2>
-    <h3 class="highlight-subtitle">Conheça nossos produtos em destaque</h3>
-    <div class="product-highlights">
-      <div class="product-highlight">
-        <img class="product-img" src="./img/product1.jpg" alt="Produto em destaque: Snakeel">
-        <h3>Snakeel</h3>
-        <p>Protótipo de tomada com extensão embutida. Facilita o uso de múltiplos aparelhos eletrônicos simultaneamente.</p>
-        <a class="cta-buttonn" href="produtos-servicos2.html">Saiba mais</a>
+  <section class="apresentacao">
+    <div class="apresentacao-content">
+      <h2>Transforme sua Vida com Mylez</h2>
+      <p>Descubra como nossas inovações podem simplificar seu dia a dia.</p>
+  
+      <!-- 1. Destaque dos Benefícios -->
+      <div class="beneficios">
+        <h3 class="destaque">Principais Benefícios</h3>
+        <ul class="animated-icons">
+          <li>
+            <img src="img/ok.png" alt="Ícone de Conveniência">
+            <p>Conveniência que se adapta à sua rotina.</p>
+          </li>
+          <li>
+            <img src="img/frutração.png" alt="Ícone de Eliminação de Frustrações">
+            <p>Elimine a frustração de lidar com cabos e adaptadores.</p>
+          </li>
+          <li>
+            <img src="img/soluções.png" alt="Ícone de Soluções Práticas">
+            <p>Soluções práticas para o uso diário de dispositivos elétricos.</p>
+          </li>
+        </ul>
       </div>
-      <div class="product-highlight">
-        <img class="product-img" src="./img/product2.jpg" alt="Produto em destaque: Produto 2">
-        <h3>Produto 2</h3>
-        <p>Descrição do Produto 2. Uma solução inteligente para suas necessidades diárias.</p>
-        <a class="cta-buttonn" href="./produtos-servicos2.html">Saiba mais</a>
+  
+      <!-- 4. Exemplos ou Casos de Uso -->
+      <div class="exemplos">
+        <h3 class="destaque">Como Mylez faz a Diferença</h3>
+        <p>Descubra como nossos produtos impactam positivamente a vida das pessoas. Conheça histórias reais de clientes satisfeitos.</p>
       </div>
-      <div class="product-highlight">
-        <img class="product-img" src="./img/productbreve.jpg" alt="Produto em destaque: Produto 3">
-        <h3>Produto 3</h3>
-        <p>Descrição do Produto 3. A inovação ao alcance das suas mãos. Não perca, você não vai se arrepender!</p>
-        <a class="cta-buttonn" href="produtos-servicos2.html">Saiba mais</a>
-      </div>
+  
+      <!-- 2. Chamada para Ação (CTA) -->
+      <a href="#depoimentos" class="cta-button">Conheça Mais</a>
     </div>
+  </section>
+  
+
+<!-- Adicione a classe "testimonial-carousel" à seção de depoimentos -->
+<section id="depoimentos" class="depoimentos testimonial-carousel">
+  <h2>Depoimentos</h2>
+  <div class="testimonial-container">
+    <!-- Adicione cada depoimento dentro desta div -->
+    <div class="depoimento">
+      <p>"Outro depoimento incrível que destaca as qualidades da empresa e dos produtos."</p>
+      <span class="author">- Cliente Satisfeito</span>
+    </div>
+    <div class="depoimento">
+      <p>"Excelente empresa! Seus produtos realmente facilitaram minha vida. Recomendo a todos!"</p>
+      <span class="author">- Cliente Satisfeito</span>
+    </div>
+    <div class="depoimento">
+      <p>"Mais um depoimento positivo sobre a experiência com os produtos da Mylez."</p>
+      <span class="author">- Cliente Satisfeito</span>
+    </div>
+    <div class="depoimento">
+      <p>"Mais um depoimento positivo sobre a experiência com os produtos da Mylez."</p>
+      <span class="author">- Cliente Satisfeito</span>
+    </div>
+    <!-- Adicione mais depoimentos conforme necessário -->
   </div>
+  <!-- Adicione as setas de navegação do carrossel -->
+  <div class="carousel-navigation">
+    <div class="arrow prev">&lt;</div>
+    <div class="arrow next">&gt;</div>
+  </div>
+
 </section>
 
 
-<!-- Seção "Sobre Nós" com imagem -->
+
+<section id="crie-o-seu" class="crie-o-seu">
+  <h2>Crie o Seu</h2>
+  <p>Personalize seu produto conforme suas necessidades. Escolha entre uma variedade de opções e crie algo único.
+    Estão aqui alguns dos benefícios que você encontra ao comprar nossos produtos:
+  </p>
+  <div class="opcoes-de-customizacao">
+    <div class="opcao-de-customizacao">
+      <h3>Cores Vibrantes</h3>
+      <p>Escolha entre uma paleta de cores vibrantes para personalizar o visual do seu produto.</p>
+    </div>
+    <div class="opcao-de-customizacao">
+      <h3>Materiais Premium</h3>
+      <p>Opte por materiais premium, como couro genuíno e metal, para uma experiência de alta qualidade.</p>
+    </div>
+    <div class="opcao-de-customizacao">
+      <h3>Tecnologia Avançada</h3>
+      <p>Integre tecnologias avançadas, como carregamento sem fio e conectividade inteligente, ao seu produto.</p>
+    </div>
+    <div class="opcao-de-customizacao">
+      <h3>Design Exclusivo</h3>
+      <p>Traga um toque exclusivo ao seu produto com designs personalizados e edições limitadas.</p>
+    </div>
+    <div class="opcao-de-customizacao">
+      <h3>Embalagem Premium</h3>
+      <p>Escolha uma embalagem premium para tornar a experiência de receber seu produto ainda mais especial.</p>
+    </div>
+    <div class="opcao-de-customizacao">
+      <h3>Gravação Personalizada</h3>
+      <p>Adicione uma gravação personalizada, como seu nome ou uma mensagem especial, ao seu produto.</p>
+    </div>
+  </div>
+  <a href="produtos-servicos2.html #produtos" class="cta-button">Comece a Personalizar</a>
+</section>
+
+
+
+<section id="customize" class="sugira">
+  <h2>O que Você Sugere?</h2>
+  <p>Queremos ouvir suas ideias! Compartilhe suas sugestões sobre novos produtos, designs ou serviços que gostaria de ver na Mylez.</p>
+  <a href="sobre-nos2.html #nós" class="cta-button">Compartilhe Agora</a>
+</section>
+
+
+<!-- Seção "Sobre Nós" com imagem ESTÁ DESABILITADOOOOOOO
 <section class="about-us-cta">
   <div class="about-us-content">
     <h2 class="about-us-title">
@@ -89,18 +194,19 @@
       <span class="underline-c"></span>
     </h2>
     <p class="about-us-description">Descubra quem somos e nossa jornada até aqui.</p>
-    <a class="cta-button" href="sobre-nos2.html">Saiba mais</a>
+    <a class="cta-button">Saiba mais</a>
   </div>
   <div class="about-us-image">
     <img src="./img/image-about.jpg" alt="Imagem Sobre Nós">
   </div>
 </section>
 
+-->
+
 <footer class="site-footer">
   <nav class="footer-links">
     <ul>
       <li><a href="index.html" class="page-link current">Home</a></li>
-      <li><a href="missao-visao-valores2.html" class="page-link">Missão, Visão e Valores</a></li>
       <li><a href="produtos-servicos2.html" class="page-link">Produtos e Serviços</a></li>
       <li><a href="sobre-nos2.html" class="page-link">Sobre Nós</a></li>
     </ul>
@@ -123,6 +229,7 @@
     </div>
   </footer>
 
+  <script src="scriptsdep.js"></script>
   <script src="scripts.js"></script>
   <meta charset="UTF-8" />
 </body>

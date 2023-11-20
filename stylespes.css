@@ -1,8 +1,10 @@
+/* Reset de margens e preenchimentos para elementos padrão */
 body, h1, h2, h3, p, ul, li {
   margin: 0;
   padding: 0;
 }
 
+/* Fonte principal para o corpo */
 body {
   font-family: 'Rajdhani', sans-serif;
 }
@@ -11,7 +13,6 @@ body {
 .special-offers {
   background-color: #f5f5f5;
   padding: 60px 0;
-  margin-bottom: 20px;
 }
 
 .special-offers .section-title {
@@ -37,7 +38,6 @@ body {
   max-width: 800px;
   margin: 0 auto;
   text-align: center;
-  
 }
 
 .special-offers .offer h3 {
@@ -69,11 +69,111 @@ body {
   background-color: #FF8C00;
 }
 
+.special-offers::after {
+  content: "";
+  display: block;
+  width: 50%;
+  height: 2px;
+  position: absolute;
+  background-color: #ccc; /* Cor da linha */
+  margin-top: 60px;
+  margin-left: 25%;
+}
+
+/* Estilo para a seção "highlight" com layout à esquerda */
+.highlight {
+  background-color: #f8f8f8;
+  padding: 80px 0;
+  text-align: center;
+}
+
+.highlight-content {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.highlight-title {
+  font-size: 40px;
+  color: #11122e;
+  margin-bottom: 20px;
+  position: relative;
+  display: inline-flex;
+}
+
+.highlight-subtitle {
+  font-size: 25px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.product-highlights {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.product-highlight {
+  flex: 1;
+  border: 2px solid #FFA500;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-img {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  border-radius: 20px;
+  margin: 0 auto 20px;
+  display: block;
+}
+
+.product-highlight h3 {
+  font-size: 24px;
+  color: #11122e;
+  margin-bottom: 10px;
+}
+
+.product-highlight p {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.cta-buttonn {
+  display: inline-block;
+  padding: 8px 18px;
+  background-color: #FFA500;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #ff9100;
+}
+
+.highlight::after {
+  content: "";
+  display: block;
+  width: 50%;
+  height: 2px;
+  position: absolute;
+  background-color: #ccc; /* Cor da linha */
+  margin-top: 60px;
+  margin-bottom: -20px;
+  margin-left: 25%;
+}
+
 /* Products and Services section */
 
 .products-services {
   max-width: 800px;
-  margin: 50px auto;
+  margin: 0px auto;
   text-align: center;
 }
 
@@ -85,7 +185,6 @@ body {
   padding: 30px 0;
   max-width: 800px;
   margin: 50px auto;
-  margin-top: -20px;
   text-align: center;
 }
 
@@ -103,7 +202,7 @@ body {
   display: grid;
   grid-template-columns: repeat(3, 2fr);
   gap: 20px;
-  margin-top: 20px;
+  margin-top: 0px;
 }
 
 .products-services::after {
@@ -115,8 +214,6 @@ body {
   margin-top: 70px;
   margin-bottom: -130px;
 }
-
-/* ... Outros estilos ... */
 
 /* Services section styles */
 
@@ -176,9 +273,6 @@ body {
   margin-top: 20px;
 }
 
-
-
-
 .products h2,
 .services h2 {
   font-size: 35px;
@@ -187,7 +281,7 @@ body {
   font-weight: 500; /* Usando a variação @500 */
   font-family: 'Rajdhani', sans-serif; /* Utilizando a fonte Rajdhani */
   border-bottom: 2px solid #000000; /* Adicionar sublinhado */
-  padding-bottom: 10px; /* Espaçamento abaixo do sublinhado */          
+  padding-bottom: 10px; /* Espaçamento abaixo do sublinhado */
 }
 
 .product h3 {
@@ -238,53 +332,4 @@ body {
 .fade-in.active {
   opacity: 1;
   transform: translateY(0);
-}
-
-
-/* Footer styles */
-
-footer {
-  background-color: #161330; /* Azul mais escuro */
-  color: white;
-  padding: 30px 0;
-  display: flex;
-  justify-content: space-between;
-}
-
-.contact,
-.newsletter {
-  flex: 1;
-  padding: 0 20px;
-}
-
-.contact h3,
-.newsletter h3 {
-  font-size: 24px;
-  margin-bottom: 10px;
-}
-
-.contact p,
-.newsletter p {
-  font-size: 16px;
-  margin-bottom: 10px;
-}
-
-.newsletter input {
-  width: 100%;
-  padding: 10px;
-  border: none;
-  margin-bottom: 10px;
-}
-
-.newsletter button {
-  background-color: #FFA500;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-.newsletter button:hover {
-  background-color: #FF8C00;
 }

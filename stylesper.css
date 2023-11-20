@@ -1,3 +1,49 @@
+body {
+    font-family: 'Rajdhani', sans-serif;
+    background-color: #c5c5c5;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilizando a barra de rolagem */
+::-webkit-scrollbar {
+    width: 9px; /* Largura da barra de rolagem */
+  }
+  
+  /* Estilizando o fundo da barra de rolagem */
+  ::-webkit-scrollbar-track {
+    background-color: #ffffff; /* Cor de fundo da barra de rolagem */
+  }
+  
+  /* Estilizando o controle de rolagem (o "pulso") */
+  ::-webkit-scrollbar-thumb {
+    background-color: #11122e; /* Cor do controle de rolagem */
+    border-radius: 6px; /* Borda arredondada do controle de rolagem */
+  }
+  
+  /* Mudando a cor do controle de rolagem quando hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #FFA500; /* Cor do controle de rolagem ao passar o mouse */
+  }
+  
+
+.purchase-header {
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    padding: 50px 0;
+    position: relative;
+}
+
+.purchase-header h1 {
+    font-size: 36px;
+}
+
+.purchase-header a {
+    color: #FFA500;
+    text-decoration: none;
+}
+
 .product-customization {
     margin-top: 20px;
 }
@@ -11,3 +57,130 @@
 .model-options {
     margin-top: 10px;
 }
+
+.product-details-container {
+    display: flex;
+    justify-content: center;
+    align-content: end; /* Centraliza verticalmente */
+}
+
+.purchase-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="email"],
+textarea,
+select {
+    width: 300px;
+    padding: 10px;
+    border: 1px solid #0f0930;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+.product-customization,
+.product-description,
+.product-preview {
+    width: 30%;
+    margin: 10px;
+}
+
+.color-options {
+    margin-top: 20px;
+}
+
+.color-selector {
+    display: flex;
+}
+
+.color-option {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+    border: 2px solid transparent;
+}
+
+.color-option:hover {
+    border-color: rgb(0, 0, 0);
+}
+
+.product-preview {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.product-preview img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    border: 2px solid transparent;
+    margin-top: 10px;
+}
+
+.product-preview img.selected {
+    border-color: white;
+}
+
+.model-options {
+    margin-top: 20px;
+}
+
+.model-option {
+    padding: 10px 20px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.model-option:hover {
+    border-color: white;
+}
+
+.model-option.selected {
+    border-color: rgb(7, 7, 7);
+}
+
+/* Estilo para o botão "Comprar" no modal */
+.buy-button {
+    background-color: #FFA500;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    display: block;
+    align-items: center;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.buy-button:hover {
+    background-color: #FF8C00;
+}
+
+
+/* Cores para os botões */
+button[data-color="white"] {
+    background-color: rgb(244, 244, 244);
+}
+
+button[data-color="black"] {
+    background-color: black;
+}
+
+button[data-color="beige"] {
+    background-color: beige;
+}
+
+

@@ -1,0 +1,46 @@
+/* Footer styles */
+  footer {
+    background-color: #130034; /* Mesma cor do header */
+    color: white;
+    padding: 30px 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .contact,
+  .newsletter {
+    flex: 1;
+    padding: 0 20px;
+  }
+  
+  .contact h3,
+  .newsletter h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .contact p,
+  .newsletter p {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .newsletter input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    margin-bottom: 10px;
+  }
+  
+  .newsletter button {
+    background-color: #FFA500;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .newsletter button:hover {
+    background-color: #FF8C00;
+  }

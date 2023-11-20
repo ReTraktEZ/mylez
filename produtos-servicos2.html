@@ -1,35 +1,57 @@
 <html lang="en">
 <head>
-  <link rel="icon" href="./img/icon.png">
+  <link rel="icon" href="">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="header.css"> <!-- Arquivo CSS do cabeçalho -->
+  <link rel="stylesheet" href="footer.css">
   <link rel="stylesheet" href="footerlinks.css">
   <link rel="stylesheet" href="stylespes.css">
+  <link rel="stylesheet" href="stylesind.css">
   <link rel="stylesheet" href="stylespesmodal.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500&display=swap" rel="stylesheet">
-  <title>Produtos e Serviços - ReTraktEZ</title>
+  <title>Mylez - Produtos e Serviços</title>
 </head>
 <body>
   <header class="header">
-    <div class="header-border"></div> <!-- Elemento para a borda laranja -->
+    <div class="header-border"></div>
     <nav class="nav">
-      <div class="logo">
-        <a href="index.html">
-          <h1>ReTraktEZ</h1>
-        </a>
-      </div>
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="missao-visao-valores2.html">Missão, Visão e Valores</a></li>
-        <li><a href="produtos-servicos2.html">Produtos e Serviços</a></li>
-        <li><a href="sobre-nos2.html">Sobre Nós</a></li>
-      </ul>
+        <div class="logo">
+            <a href="index.html">
+                <img src="img/logo.png" alt="Logo da Mylez">
+            </a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="produtos-servicos2.html">Produtos e Serviços</a></li>
+            <li><a href="sobre-nos2.html">Sobre Nós</a></li>
+        </ul>
+        <div class="header-actions">
+            <div class="search header-action">
+                <form action="busca.html" method="get">
+                    <input type="text" name="q" placeholder="Buscar">
+                    <button type="submit">
+                        <img src="img/lupa.png" alt="Ícone de Busca">
+                    </button>
+                </form>
+            </div>
+            <div class="cart header-action">
+                <a href="carrinho.html">
+                    <img src="img/carrinho.png" alt="Ícone do Carrinho">
+                </a>
+            </div>
+            <div class="links header-action">
+                <a href="login.html">Login</a>
+            </div>
+            <div class="links header-action">
+                <a href="registro.html">Registrar</a>
+            </div>
+        </div>
     </nav>
-  </div>
-  </header>
+</header>
+
 
     <!-- Seção de Ofertas Especiais -->
     <section class="special-offers">
@@ -45,20 +67,47 @@
       <!-- Adicione mais ofertas aqui, se necessário -->
     </section>
 
+    <!-- Seção "highlight" -->
+<section class="highlight">
+  <div class="highlight-content">
+    <h2 class="highlight-title">Destaques<span class="underline-d"></span></h2>
+    <h3 class="highlight-subtitle">Conheça nossos produtos em destaque</h3>
+    <div class="product-highlights">
+      <div class="product-highlight">
+        <img class="product-img" src="./img/product-preview-white.jpg" alt="Produto em destaque: Snakeel">
+        <h3>Snakeel</h3>
+        <p>Protótipo de tomada com extensão embutida. Facilita o uso de múltiplos aparelhos eletrônicos simultaneamente.</p>
+        <a class="cta-buttonn" href="#produtos">Saiba mais</a>      </div>
+      <div class="product-highlight">
+        <img class="product-img" src="./img/product-preview-new.jpg" alt="Produto em destaque: Produto 2">
+        <h3>Suport Recharge</h3>
+        <p> carregador de celular com suporte anti-queda.</p>
+        <a class="cta-buttonn" href="#produtos">Saiba mais</a>
+      </div>
+      <div class="product-highlight">
+        <img class="product-img" src="./img/productbreve.jpg" alt="Produto em destaque: Produto 3">
+        <h3>Produto 3</h3>
+        <p>Descrição do Produto 3. A inovação ao alcance das suas mãos. Não perca, você não vai se arrepender!</p>
+        <a class="cta-buttonn" href="#produtos">Saiba mais</a>
+      </div>
+    </div>
+  </div>
+</section>
+
   <!-- Products and Services section -->
-  <section class="products">
+  <section id="produtos" class="products">
     <div class="products-services">
       <h2>Explore Nossos Produtos</h2>
       <div class="product-container">
         <div class="product">
-          <img src="./img/product1.jpg" alt="Produto 1">
+          <img src="./img/product-preview-white.jpg" alt="Produto 1">
           <div class="product-info">
             <h3>Snakeel</h3>
             <p>Protótipo de tomada com extensão embutida.</p>
           </div>
         </div>
         <div class="product">
-          <img src="./img/product2.jpg" alt="Produto 2">
+          <img src="./img/product-preview-new.jpg" alt="Produto 2">
           <div class="product-info">
             <h3>Suport Recharge</h3>
             <p>Um carregador de celular com suporte anti-queda.</p>
@@ -99,7 +148,7 @@
   </section>
 
 <!-- Modal para informações do produto -->
-<div class="modal">
+<div id="modal" class="modal">
   <div class="modal-content">
     <span class="close-button">&times;</span>
     <h3 class="product-name">Nome do Produto</h3>
@@ -118,7 +167,7 @@
       </div>
       <!-- Adicione mais avaliações aqui -->
     </div>
-    <a class="buy-button" href="purchase.html">Comprar</a>
+    <a class="buy-button" href="personalização.html">Comprar</a>
       <!-- Adicione mais informações do produto aqui -->
     </div>
   </div>
@@ -150,7 +199,6 @@
     <nav class="footer-links">
       <ul>
         <li><a href="index.html" class="page-link">Home</a></li>
-        <li><a href="missao-visao-valores2.html" class="page-link">Missão, Visão e Valores</a></li>
         <li><a href="produtos-servicos2.html" class="page-link
           current">Produtos e Serviços</a></li>
         <li><a href="sobre-nos2.html" class="page-link">Sobre Nós</a></li>
@@ -173,6 +221,7 @@
     </div>
   </footer>
 
+  <script src="scriptsmodal.js"></script>
   <script src="scripts.js"></script>
   <script src="scriptpes.js"></script>
   <meta charset="UTF-8" />
