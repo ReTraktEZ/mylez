@@ -17,11 +17,11 @@ document.addEventListener("DOMContentLoaded", function () {
   
     prevArrow.addEventListener("click", function () {
       currentIndex = (currentIndex - 1 + testimonialContainer.children.length) % testimonialContainer.children.length;
-      updateCarousel();
+      updateCarousel(); 
     });
   
     function updateCarousel() {
-      const translateValue = -currentIndex * 64.3 + "%";
+      const translateValue = -currentIndex * 100 + "%";
       testimonialContainer.style.transform = "translateX(" + translateValue + ")";
     }
   });
